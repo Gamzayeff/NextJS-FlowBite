@@ -1,11 +1,11 @@
-export default function SponsorLogos() {
+import React from "react";
+
+const Sponsor = () => {
   return (
-    <div className="my-6 flex justify-center gap-8 text-lg font-semibold text-gray-400">
-      <span>NETFLIX</span>
-      <span>reddit</span>
-      <span>amazon</span>
-      <span>DISCORD</span>
-      <span>Spotify</span>
+    <div className="mt-[30px]">
+      <img className="w-full" src="/images/Sponsored.svg" />
     </div>
   );
-}
+};
+
+export default Sponsor;

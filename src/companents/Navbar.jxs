@@ -1,0 +1,57 @@
+"use client";
+import { Button, Navbar } from "flowbite-react";
+
+const Navbar = () => {
+  return (
+    <Navbar className="bg-white" fluid rounded>
+      <Navbar.Brand href="https://flowbite-react.com">
+        <img
+          src="/images/logo.svg"
+          className="mr-3 h-6 sm:h-9"
+          alt="Flowbite React Logo"
+        />
+        <span className="self-center whitespace-nowrap text-[18px] font-normal text-[#000000]">
+          Lasles<span className="font-semibold">VPN</span>
+        </span>
+      </Navbar.Brand>
+      <Navbar.Collapse>
+        <Navbar.Link
+          active
+          className="font-serif text-[16px] font-medium text-[#2B2B2B]"
+          href="#"
+        >
+          features
+        </Navbar.Link>
+        <Navbar.Link
+          className="font-serif text-[16px] font-medium text-[#2B2B2B]"
+          href="#"
+        >
+          Pricing
+        </Navbar.Link>
+        <Navbar.Link
+          className="font-serif text-[16px] font-medium text-[#2B2B2B]"
+          href="#"
+        >
+          Testimonial
+        </Navbar.Link>
+        <Navbar.Link
+          className="font-serif text-[16px] font-medium text-[#2B2B2B]"
+          href="#"
+        >
+          Help
+        </Navbar.Link>
+      </Navbar.Collapse>
+      <div className="flex md:order-2">
+        <Button className="rounded-[20px] border-[2px] bg-white text-[#2B2B2B]">
+          Sign In
+        </Button>
+        <Button className="rounded-[20px] border-[2px] bg-white text-[#2B2B2B]">
+          Sign Up
+        </Button>
+        <Navbar.Toggle />
+      </div>
+    </Navbar>
+  );
+};
+
+export default Navbar;
